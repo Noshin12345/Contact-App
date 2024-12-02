@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#aabbff"
+    tools:context=".ContactListActivity">
+
+    <TextView
+        android:id="@+id/tvTitleContactList"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Contact List"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:id="@+id/lvContactList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#aabbff">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Back"
+            android:textColor="@android:color/black"
+            android:background="#aabbff"
+            android:foreground="?android:attr/selectableItemBackground"/>
+
+        <Button
+            android:id="@+id/btnAddNew"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Add New"
+            android:textColor="@android:color/black"
+            android:background="#aabbff"
+            android:foreground="?android:attr/selectableItemBackground"/>
+    </LinearLayout>
+</LinearLayout>
